@@ -1,5 +1,13 @@
 # SMALL TIPS FOR WEEK 1
 
+## Use variables to shortcircuit loops
+
+```javascript
+for (let i = 0; i < array.length; i++) {
+  if (shortcircuit === true) i = array.length;
+}
+```
+
 ## Sum Function
 
 #### Convert the arguments into Numbers BEFORE passing them into a math function
