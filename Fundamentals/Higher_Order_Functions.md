@@ -7,6 +7,7 @@
 ```javascript
 const animalsArr = ["Cat", "Dog", "Mouse"];
 array.filter((x) => "Dog");
+// ["Dog"]
 ```
 
 ```javascript
@@ -23,3 +24,14 @@ array.map((x) => x + "dog");
 ```
 
 `.reduce`
+
+`.sort()`
+
+### Sorts the elements of an array in place and returns sorted array.
+
+```javascript
+let numbers = [4, 2, 1, 3, 5];
+numbers.sort((a, b) => a - b);
+
+// [1, 2, 3, 4, 5]
+```
