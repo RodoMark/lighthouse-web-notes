@@ -1,5 +1,9 @@
 # SMALL TIPS FOR WEEK 1
 
+## Functions should only do one thing
+
+#### Make multiple functions and pass them into each other
+
 ## Use variables to shortcircuit loops
 
 ```javascript
