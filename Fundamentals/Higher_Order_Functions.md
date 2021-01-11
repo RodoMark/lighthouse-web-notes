@@ -28,7 +28,7 @@ array.map((x) => x + "dog");
 ### Can be used to express any list transformation.
 
 - The first value is the function.
-- The second value is the starting value.
+- The second value is the starting value (which could be a number, array, object etc...)
 
 ```javascript
 const orders = [{amount: 250}, {amount: 400}, {amount: 100}, {amount: 325}]
