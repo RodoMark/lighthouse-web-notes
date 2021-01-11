@@ -25,6 +25,18 @@ array.map((x) => x + "dog");
 
 `.reduce`
 
+### Can be used to express any list transformation.
+
+- The first value is the function.
+- The second value is the starting value.
+
+```javascript
+const orders = [{amount: 250}, {amount: 400}, {amount: 100}, {amount: 325}]
+const totalAmount = numbers.reduce((function(sum, order) {
+  return sum = sum + order.amount
+}, 0) // 1075
+```
+
 `.sort()`
 
 ### Sorts the elements of an array in place and returns sorted array.
