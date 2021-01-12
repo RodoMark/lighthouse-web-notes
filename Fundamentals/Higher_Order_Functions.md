@@ -1,6 +1,6 @@
 # HIGHER ORDER FUNCTIONS
 
-`.filter`
+## `.filter`
 
 ### Filters out the value that is specified and returns it
 
@@ -15,7 +15,7 @@ const  animalsObj = { species: ["Cat", "Dog", "Mouse"] }
 animals.filter(animals => animals.species === "Dog"
 ```
 
-`.map`
+## `.map`
 
 ### Carries out a callback function on all the elements
 
@@ -23,7 +23,7 @@ animals.filter(animals => animals.species === "Dog"
 array.map((x) => x + "dog");
 ```
 
-`.reduce`
+## `.reduce`
 
 ### Can be used to express any list transformation.
 
@@ -37,7 +37,7 @@ const totalAmount = numbers.reduce((function(sum, order) {
 }, 0) // 1075
 ```
 
-`.sort()`
+## `.sort()`
 
 ### Sorts the elements of an array in place and returns sorted array.
 
