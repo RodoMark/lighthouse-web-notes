@@ -17,3 +17,4 @@
 * [Week 2](/Week_2)
   - [Day 1](/Week_2/Day_1)
   - [Day 2](/Week_2/Day_2)
+  - [Day 3](/Week_2/Day_3)
