@@ -1,6 +1,6 @@
 # PROMISES
 
-### A `Promise` is an object that represents a future values
+## A `Promise` is an object that represents a future value
 
 ## Our `Promise Object` has 3 potential states
 
@@ -15,6 +15,21 @@
 ### <`Rejected`>
 
 #### Async operation ended with an 'error'
+
+### Return new Promise
+
+```javascript
+const newPromiseFunction = function (inputString) {
+  // Callback
+  return new Promise((resolve, reject) => {
+    const error = false;
+
+    resolve(someValue);
+
+    reject(someValue);
+  });
+};
+```
 
 ```javascript
 const ExecutorFct = (resolveFct, rejectFct) => {
@@ -43,7 +58,7 @@ const ExecutorFct = (resolveFct, rejectFct) => {
 const promiseObj = new Promise(executorFct);
 ```
 
-# `CONSUMING` the promise
+# `CONSUMING` the Promise
 
 ```javascript
 promiseObj
@@ -54,6 +69,6 @@ promiseObj
 
   .catch((error)) => {
     // fail case
-    console.log(`Error: ${error}`)
+    console.log(`Error catch: ${error}`)
   }
 ```
