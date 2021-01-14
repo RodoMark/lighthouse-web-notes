@@ -18,4 +18,6 @@
   - [Day 1](/Week_2/Day_1)
   - [Day 2](/Week_2/Day_2)
   - [Day 3](/Week_2/Day_3)
-  - [Day 4](/Week_2/Day_4)
+    <<<<<<< HEAD
+    =======
+    > > > > > > > 6d676d1afc0470a6b841aca3ae2a58e342577606
