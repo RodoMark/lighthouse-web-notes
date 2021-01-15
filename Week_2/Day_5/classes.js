@@ -1,18 +1,36 @@
 class Pizza {
   constructor(size, crust) {
-    this.size = size;
-    this.crust = crust;
+    this._size = size;
+    this._crust = crust;
     this.toppings = ["cheese"];
+    this.price;
   }
 
   addTopping(topping) {
     this.toppings.push(topping);
   }
 
+  set size(size) {
+    const sizes = ["small", "medium", "large"];
+    if (sizes.includes(size)) {
+      this._size = size;
+    } else throw error;
+  }
+
+  set crust(crust) {
+    this.crust = crust;
+  }
+
+  get price() {
+    const basePrice = 10;
+    const toppingPrice = 1;
+    return basePrice + this.toppings.length * toppingPrice;
+  }
+
   orderReceived() {
     console.log(
-      `Order received. One ${this.size} ${
-        this.crust
+      `Order received. One ${this._size} ${
+        this._crust
       } pizza with ${this.toppings.join(", ")} coming right up!`
     );
   }
@@ -27,6 +45,4 @@ pizza2.addTopping("pepperoni");
 
 const array = [pizza1, pizza2, pizza3];
 
-for (const pizza of array) {
-  pizza.orderReceived();
-}
+console.log(pizza1._size, pizza1._crust, pizza1.price);

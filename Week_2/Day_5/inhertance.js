@@ -19,6 +19,10 @@ class Person {
 // The syntax is class Child extends Parent {}
 
 class Student extends Person {
+  bio() {
+    return `I'm a programming student at Lighthouse Labs. ${super.bio()}`;
+  }
+
   // stays in Student class since it's specific to students only
   enroll(cohort) {
     this.cohort = cohort;
@@ -26,6 +30,10 @@ class Student extends Person {
 }
 
 class Mentor extends Person {
+  bio() {
+    return `I'm a mentor at Lighthouse Labs. ${super.bio()}`;
+  }
+
   // specific to mentors
   goOnShift() {
     this.onShift = true;
@@ -46,4 +54,4 @@ mentor1.goOnShift();
 student1.bio();
 
 console.log(student1, mentor1);
-console.log(student1.bio(), mentor1.bio());
+console.log(student1.bio(), "\n", mentor1.bio());
